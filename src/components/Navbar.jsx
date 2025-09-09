@@ -7,8 +7,8 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full absolute top-0 left-0 z-50 bg-transparent lg:pt-5 ">
-      <div className="container mx-auto flex items-center justify-between  px-4 py-4">
+    <nav className="w-full absolute top-0 left-0 z-50 bg-transparent lg:pt-5 lg:px-10 pt-2 ">
+      <div className="container  mx-auto flex items-center justify-between  px-4 py-4">
         {/* Logo -------------------------------------------------------------------------------------*/}
         <div className="w-28">
          <Link to='/jobs'>
@@ -23,7 +23,7 @@ const Navbar = () => {
               <NavLink
                 to={`/${item.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `px-3 py-1 rounded-xl hover:text-blue-200 ${isActive ? "bg-gray-600/60 text-blue-200 shadow" : ""
+                  `px-3 py-1 rounded-2xl hover:text-blue-200 ${isActive ? "bg-gray-600/60 text-blue-200 shadow" : ""
                   }`
                 }
               >

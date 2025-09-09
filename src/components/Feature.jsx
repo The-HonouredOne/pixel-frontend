@@ -6,7 +6,7 @@ import { PiHandshakeFill } from "react-icons/pi";
 
 const Feature = () => {
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto lg:px-10 px-4 py-10">
       {/* Use responsive grid instead of flex-col + flex-row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         

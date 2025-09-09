@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="w-full">
 
-      {/* Hero Section */}
+      {/* Hero Section--------------------------------------------- */}
       <div className="bg-gradient-to-r from-blue-200 to-blue-500 text-black md:min-h-[70vh] flex flex-col justify-center items-start px-6 md:px-20 py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 mt-8">About Us</h1>
         <h2 className="text-xl md:text-3xl font-semibold mb-2">
@@ -16,10 +16,10 @@ const About = () => {
         </p>
       </div>
 
-      {/* Main Content Section */}
+      {/* Main Content Section -------------------------------*/}
       <div className="max-w-6xl mx-auto px-6 md:px-20 py-16 flex flex-col md:flex-row gap-12 md:gap-16 items-start">
 
-        {/* Left Column: Text */}
+        {/* Left Column: Text -----------------------------*/}
         <div className="md:w-1/2 flex flex-col gap-8">
 
           {/* Our Company */}
