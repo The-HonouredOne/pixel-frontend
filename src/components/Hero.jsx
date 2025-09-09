@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative md:min-h-screen min-h-[60vh] flex flex-col justify-center items-center text-center px-4 pt-10 lg:pt-0 md:pt-0 "
+      className="relative md:min-h-[80vh] min-h-[60vh] flex flex-col justify-center items-center text-center px-4 pt-10 lg:pt-0 md:pt-0 "
       style={{
         backgroundImage: `url(${pixelbanner})`,
         backgroundRepeat: "no-repeat",
