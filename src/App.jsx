@@ -1,16 +1,25 @@
-import { Navigate, Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Home from "./components/Home"
 import About from "./pages/About"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Contact from "./pages/Contact"
 import Login from "./pages/Login"
+import AuthNavbar from "./components/AuthNavbar"
 
 
 const App = () => {
+
+  const location = useLocation()
+
+  const hidepaths = ['/login', '/signup']
+
+const ishidepage = hidepaths.includes(location.pathname) 
+
+
   return (
     <div>
-      <Navbar />
+      {!ishidepage && <Navbar />}
 
       <Routes>
         <Route path="/" element={<Navigate to="/jobs" replace />} />
@@ -19,8 +28,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />
-
+     
+  {!ishidepage && <Footer />}
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/minilogo.jpg";
+import img from "../assets/minilogo.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Testimonials = () => {

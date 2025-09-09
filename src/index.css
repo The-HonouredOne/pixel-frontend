@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+
+:root {
+  --brand: #8fedf0;
+  --brand-dark: #1e40af;
+  --pixel-orange: #ff6b35;
+}

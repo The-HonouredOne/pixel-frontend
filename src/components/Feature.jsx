@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/minilogo.jpg";
+import img from "../assets/minilogo.png";
 import { BsFilePerson } from "react-icons/bs";
 import { MdEditDocument } from "react-icons/md";
 import { PiHandshakeFill } from "react-icons/pi";

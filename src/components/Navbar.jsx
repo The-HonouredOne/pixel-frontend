@@ -11,9 +11,9 @@ const Navbar = () => {
       <div className="container  mx-auto flex items-center justify-between  px-4 py-4">
         {/* Logo -------------------------------------------------------------------------------------*/}
         <div className="w-28">
-         <Link to='/jobs'>
-          <img src={pixellogo} alt="logo" className="w-full h-auto" />
-         </Link>
+          <Link to='/jobs'>
+            <img src={pixellogo} alt="logo" className="w-full h-auto" />
+          </Link>
         </div>
 
         {/* Desktop Nav------------------------------------------------------------------------- */}
@@ -34,9 +34,11 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop Buttons -----------------------------------------------------------------------*/}
-        <div className="hidden md:flex gap-4">
-          <button className="text-white">Login</button>
-          <button className="px-5 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition">
+        <div className="hidden md:flex gap-4 items-center ">
+          <Link to='/login'>
+            <button className="px-5 py-1 rounded-lg cursor-pointer border border-white shadow  text-orange-400 hover:border-orange-500 hover:text-white transition">Login</button>
+          </Link>
+          <button className="px-4 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition">
             Sign Up
           </button>
         </div>
@@ -66,9 +68,11 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="mt-6 flex flex-col gap-3">
-            <button className="w-full border border-white py-2 text-black rounded-lg">
-              Login
-            </button>
+            <Link to='/login'>
+              <button className="w-full border border-white py-2 text-black rounded-lg">
+                Login
+              </button>
+            </Link>
             <button className="w-full py-2 rounded-lg bg-blue-500 hover:bg-blue-600">
               Sign Up
             </button>
