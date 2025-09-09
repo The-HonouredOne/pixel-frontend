@@ -3,7 +3,7 @@ import grouppixel from '../assets/grouppixel.jpg';
 
 const About = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mb-10">
 
       {/* Hero Section--------------------------------------------- */}
       <div className="bg-gradient-to-r from-blue-200 to-blue-500 text-black md:min-h-[70vh] flex flex-col justify-center items-start px-6 md:px-20 py-16">

@@ -66,7 +66,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="mt-6 flex flex-col gap-3">
-            <button className="w-full border border-white py-2 rounded-lg">
+            <button className="w-full border border-white py-2 text-black rounded-lg">
               Login
             </button>
             <button className="w-full py-2 rounded-lg bg-blue-500 hover:bg-blue-600">

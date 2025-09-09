@@ -1,56 +1,74 @@
-
-import { MdLocationPin } from "react-icons/md";
+import { MdLocationPin, MdMailOutline } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
-import { MdMailOutline } from "react-icons/md";
-import map from '../assets/map.png'
-
+import map from "../assets/map.png";
 
 const Contact = () => {
+  return (
+    <div className="bg-gradient-to-t from-green-50 to-blue-400 text-black min-h-screen px-4 md:px-10 lg:px-30 md:pt-25 pt-20 py-10 flex flex-col items-center">
+      {/* Heading */}
+      <div className="w-full max-w-6xl px-4 md:px-0 text-center md:text-left">
+        <p className="text-3xl sm:text-4xl md:text-5xl font-bold pb-3">Contact Us</p>
+        <p className="text-gray-500 text-base sm:text-lg md:text-xl font-medium">
+          We`d love to hear from you. Get in touch today
+        </p>
+      </div>
 
-
-
-
-
-
-    return (
-        <div>
-            <div className="bg-gradient-to-t from-green-50 to-blue-400 md:px-50 text-black md:min-h-[100vh] flex flex-col justify-center items-start px-6  pt-12 gap-10">
-                <div>
-                    <p className='text-5xl font-bold pb-3'>Contact Us</p>
-                    <p className='text-gray-500 text-xl font-medium'>We'd love to hear from you. Get in touch today</p>
-                </div>
-
-                <div className="flex w-full justify-between ">
-                    <div className="w-[55%] bg-white flex flex-col gap-4 rounded-2xl shadow p-10 ">
-                        <input type="text" placeholder='Name' className='border border-gray-300 outline-0 rounded pl-2 placeholder:text-xs py-2 text-xs' />
-                        <input type="text" placeholder='Email' className='border border-gray-300 outline-0 rounded pl-2 placeholder:text-xs py-2 text-xs' />
-                        <textarea type="text" placeholder='Message' className='border border-gray-300 outline-0 rounded pl-2 placeholder:text-xs h-25 py-1 text-xs' />
-                        <button type="text" placeholder='Message' className='border border-gray-300 outline-0 rounded bg-blue-500 text-white '>Send Message</button>
-                    </div>
-                    <div className="w-[40%]  flex flex-col gap-4 pt-5  ">
-                        <div className='flex items-center gap-8'>
-                            <MdLocationPin size={25} /> <div className='font-medium'> <p>Varun Path</p> <p>jaipur, Raj. 1235</p> </div>
-                        </div>
-                        <div className='flex items-center  gap-8 pl-2'>
-                            <BsTelephone size={15} className='mt-1' /> <div className='font-medium'> <p>(123) 456 789</p> </div>
-                        </div>
-                        <div className='flex items-center  gap-8 pl-2'>
-                            <MdMailOutline size={18} className='mt-2' /> <div className='font-medium'> <p>pixelee@gmail.com</p> </div>
-                        </div>
-
-
-                        <img src={map} className="w-60 h-40 rounded-2xl shadow" alt="" />
-
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
+      {/* Form + Info */}
+      <div className="flex flex-col md:flex-row justify-center items-start gap-8 w-full max-w-6xl mt-8 px-4 md:px-0">
+        {/* Left: Form */}
+        <div className="w-full md:w-[55%] bg-white flex flex-col gap-4 rounded-2xl shadow p-4 sm:p-6 md:p-8">
+          <input
+            type="text"
+            placeholder="Name"
+            className="border border-gray-300 outline-0 rounded pl-2 placeholder:text-sm py-2 text-sm"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            className="border border-gray-300 outline-0 rounded pl-2 placeholder:text-sm py-2 text-sm"
+          />
+          <textarea
+            placeholder="Message"
+            className="border border-gray-300 outline-0 rounded pl-2 placeholder:text-sm h-28 py-1 text-sm"
+          />
+          <button className="border border-gray-300 rounded bg-blue-500 text-white py-2 hover:bg-blue-600 transition">
+            Send Message
+          </button>
         </div>
-    )
-}
 
-export default Contact
+        {/* Right: Info + Map */}
+        <div className="w-full md:w-[40%] flex flex-col gap-5 pt-3">
+          <div className="flex items-start gap-3">
+            <MdLocationPin size={22} className="text-blue-600 flex-shrink-0 mt-1" />
+            <div className="font-medium text-sm sm:text-base leading-relaxed">
+              <p>Varum Path,</p>
+              <p>Jaipur, Raj. 1235</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3">
+            <BsTelephone size={18} className="text-blue-600 flex-shrink-0 mt-1" />
+            <div className="font-medium text-sm sm:text-base leading-relaxed">
+              <p>(123) 456-7890</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3">
+            <MdMailOutline size={20} className="text-blue-600 flex-shrink-0 mt-1" />
+            <div className="font-medium text-sm sm:text-base leading-relaxed break-words">
+              <p>pixelee@gmail.com</p>
+            </div>
+          </div>
+
+          <img
+            src={map}
+            className="w-full  sm:h-39 rounded-2xl shadow object-cover"
+            alt="map"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

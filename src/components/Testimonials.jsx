@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Testimonials = () => {
   return (
-    <div className="container mx-auto px-4 lg:px-10">
+    <div className="container mx-auto px-4 lg:px-10 mb-10">
       {/* Testimonials */}
       <div>
         <h1 className="text-2xl md:text-3xl font-semibold mt-10">Testimonials</h1>
